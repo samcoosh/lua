@@ -19,7 +19,7 @@ build:
   project: .build/INSTALL.vcxproj
   
 after_test:
-  - cmd: nuget pack
+  - cmd: nuget pack -Version {version}
   
 artifacts:
   - path: '**\*.nupkg'
