@@ -16,3 +16,6 @@ before_build:
 build:
   publish_nuget: true
   verbosity: normal
+  
+artifacts:
+  - path: '**\*.nupkg'
