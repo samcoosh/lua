@@ -23,3 +23,11 @@ after_test:
   
 artifacts:
   - path: '**\*.nupkg'
+  
+deploy:
+  - provider: NuGet
+    server: https://nuget.pkg.github.com/samcoosh/index.json
+    artifact: /.*\.nupkg/
+    username: samcoosh
+    api_key:
+      secure: 7b958159ab12a1ba19e68469e12950c3aa4c1ae7
