@@ -5,6 +5,9 @@ configuration:
   - Debug
   - Release
   
+install:  
+  - git submodule update --init --recursive
+  
 before_build:
 - cmd: cmake -H. -B./.build
   
