@@ -31,4 +31,4 @@ deploy:
     artifact: /.*\.nupkg/
     username: samcoosh
     api_key:
-      secure: 7b958159ab12a1ba19e68469e12950c3aa4c1ae7
+      secure: 8c333f42afa1d98319a2d5e87119ce3f38e4700a
