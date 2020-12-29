@@ -16,6 +16,7 @@ before_build:
 build:
   publish_nuget: true
   verbosity: normal
+  project: .build/INSTALL.vcxproj
   
 after_test:
   - cmd: nuget pack
