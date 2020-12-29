@@ -30,4 +30,4 @@ deploy:
     description: 'Release description'
     artifact: /.*\.nupkg/
     username: samcoosh
-    api_key: 8c333f42afa1d98319a2d5e87119ce3f38e4700a
+    api_key: 7857ea9e1355a96a3de3c8ed1f6f31fd77c4f402
