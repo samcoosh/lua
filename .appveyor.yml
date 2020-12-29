@@ -17,5 +17,8 @@ build:
   publish_nuget: true
   verbosity: normal
   
+after_test:
+  - ps: .\pack.ps1
+  
 artifacts:
   - path: '**\*.nupkg'
