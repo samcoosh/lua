@@ -18,7 +18,7 @@ build:
   verbosity: normal
   
 after_test:
-  - ps: .\pack.ps1
+  - cmd: nuget pack
   
 artifacts:
   - path: '**\*.nupkg'
