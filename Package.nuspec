@@ -12,6 +12,7 @@
     <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
     <copyright>$copyright$</copyright>
     <tags>native,lua,C</tags>
+	<repository type="git" url="https://github.com/samcoosh/lua.git" />
     <dependencies>
     </dependencies>
   </metadata>
