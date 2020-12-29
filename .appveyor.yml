@@ -26,7 +26,8 @@ artifacts:
   
 deploy:
   - provider: NuGet
-    server: https://nuget.pkg.github.com/samcoosh/index.json
+    server: https://nuget.pkg.github.com/samcoosh/index.json    
+    description: 'Release description'
     artifact: /.*\.nupkg/
     username: samcoosh
     api_key:
