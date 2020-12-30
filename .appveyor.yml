@@ -3,6 +3,7 @@ image:
   
 platform:
   - x64
+  - x32
   
 configuration:
   - Release
