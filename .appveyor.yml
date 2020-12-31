@@ -1,22 +1,16 @@
 image:
   - Visual Studio 2019
   
-platform:
-  - x64
-  
-configuration:
-  - Release
-  
 install:  
   - git submodule update --init --recursive
   
 before_build:
-- cmd: cmake -H. -B./.build -DCMAKE_INSTALL_PREFIX=./package
-  
-build:
-  publish_nuget: true
-  verbosity: normal
-  project: .build/INSTALL.vcxproj
+- cmd: cmake -G "Visual Studio 16 2019" -A Win32 -B./build_x86 -DCMAKE_INSTALL_PREFIX=./package_x86
+- cmd: cmake -G "Visual Studio 16 2019" -A x64 -B./build_x64 -DCMAKE_INSTALL_PREFIX=./package_x64
+    
+build_script:
+- cmd: cmake --build build_x86 --target INSTALL --config Release
+- cmd: cmake --build build_x64 --target INSTALL --config Release
   
 after_test:
   - cmd: nuget pack -Version %APPVEYOR_BUILD_VERSION%
